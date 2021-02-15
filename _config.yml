@@ -1,5 +1,1 @@
-remote_theme: https://github.com/tomjoht/documentation-theme-jekyll
-plugins:
-  - jekyll-feed # 元から入っている
-  - jekyll-remote-theme　# added
-  - github-pages # added
+theme: jekyll-theme-slate
