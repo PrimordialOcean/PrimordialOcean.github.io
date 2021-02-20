@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Motohiro Sato&#39;s web site</title>
+    <link>/tags/python/</link>
+    <description>Recent content in Python on Motohiro Sato&#39;s web site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 20 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>データ下処理メモ</title>
+      <link>/post/datatips/</link>
+      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/datatips/</guid>
+      <description>&lt;p&gt;Pandasでよく出てくる作業を備忘録として．&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
