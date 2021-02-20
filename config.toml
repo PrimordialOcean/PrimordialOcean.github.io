@@ -2,5 +2,5 @@ baseURL = "https://primordialocean.github.io/"
 languageCode = "ja"
 title = "Motohiro Sato's Web Site"
 disableKinds = ["RSS", "sitemap"]
-contentDir = "content"
+publishDir = "docs"
 theme = "just-the-docs"
