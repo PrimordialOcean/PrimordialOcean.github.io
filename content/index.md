@@ -37,7 +37,7 @@ Department of Earth and Environmental Science, Yamagata University
 - Google photos: [https://photos.app.goo.gl/3j92vmfzJzAH6xTT6](https://photos.app.goo.gl/3j92vmfzJzAH6xTT6)
 
 # Articles
-- [Rhyolite-MELTSについて](Rhyolite-MELTS.md)
-- [計算機の環境構築メモ](machinesetup.md)
-- [ImageMagick覚書](imagemagick.md)
-- [データ整理・可視化メモ](datatips.md)
+- [Rhyolite-MELTSについて](./md_docs/Rhyolite-MELTS.md)
+- [計算機の環境構築メモ](./md_docs/machinesetup.md)
+- [ImageMagick覚書](./md_docs/imagemagick.md)
+- [データ整理・可視化メモ](./md_docs/datatips.md)
