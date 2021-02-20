@@ -8,7 +8,7 @@ tags:
   - "MELTS"
   - "PC"
 ---
-Rhyolite-MELTSの使い方について解説します．
+Rhyolite-MELTSの使い方についてメモ．
 <!--more-->
 
 ## Rhyolite-MELTSとは
