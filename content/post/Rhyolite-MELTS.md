@@ -1,10 +1,15 @@
-# Rhyolite-MELTSについて
+---
+title: Rhyolite-MELTSについて
+date: 2020-04-16
+categories:
+  - "Articles"
+tags:
+  - "Earth Science"
+  - "MELTS"
+  - "PC"
+---
 Rhyolite-MELTSの使い方について解説します．
-
-更新履歴
-- Oct. 28, 2020 全面的に修正．
-- Apr. 24, 2020 Ubuntu 20.04LTS に対応する方法を追記しました．
-- Apr. 16, 2020 Ubuntu 18.04LTS 向けに追記しました．
+<!--more-->
 
 ## Rhyolite-MELTSとは
 Rhyolite-MELTSとは相平衡計算ソフトMELTS (Ghiorso and Sack, 1995) の改良版である．
@@ -95,5 +100,3 @@ $ ./Melts-rhyolite-public
 - Topic: Updated: enabling the WSL and installing the Rhyolite-MELTS GUI (new for 2018)  (Read 3075 times)：[https://magmasource.caltech.edu/forum/index.php?topic=841.0](https://magmasource.caltech.edu/forum/index.php?topic=841.0)
 - JAMSTEC上木賢太さんの解説：[https://sites.google.com/site/kentaueki/melts#004](https://sites.google.com/site/kentaueki/melts#004)
 - Trouble installing libpng12 on 19.04: [https://askubuntu.com/questions/1137814/trouble-installing-libpng12-on-19-04](https://askubuntu.com/questions/1137814/trouble-installing-libpng12-on-19-04)
-
-[Return to the home page](../index.md)

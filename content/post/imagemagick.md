@@ -1,11 +1,22 @@
-# ImageMagick覚書
-## ImageMagickとは？
+---
+title: ImageMagick覚書
+date: 2021-02-20
+categories:
+  - "Articles"
+tags:
+  - "ImageMagick"
+  - "PC"
+---
+
+<!--more-->
+
+## Introduction
 ImageMagickはコマンドライン上で利用できるビットマップイメージの作成，編集，変換などを行うツール．
 PNG, JPEG, GIF, TIFF, Postscript, PDF, SVGなどの200以上のファイル形式に対応している．
 マルチスレッド処理に対応しているためGB単位の巨大なファイルでも高速に処理できることが特徴．
 公式サイトは [https://imagemagick.org](https://imagemagick.org)．
 
-## インストール
+### インストール
 インストールは特にこだわりがなければaptでインストールできる．
 ```
 $ sudo apt install imagemagick

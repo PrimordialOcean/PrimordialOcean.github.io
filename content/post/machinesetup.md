@@ -1,7 +1,15 @@
-# 計算機のセットアップ手順書
-Last modified: Jan. 2, 2021
+---
+title: 計算機のセットアップ手順書
+date: 2021-01-02
+categories:
+  - "Articles"
+tags:
+  - "PC"
+---
 
 最近PCを新しくしてセットアップに結構手間取ったので備忘録として．
+<!--more-->
+
 
 ## 環境
 - OS: Windows 10 Home
@@ -237,5 +245,3 @@ $ export DISPLAY='クライアントのIPアドレス':0.0
 $ echo $DISPLAY
 'クライアントのIPアドレス':0.0
 ```
-
-[Return to the home page](../index.md)
