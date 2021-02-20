@@ -1,37 +1,43 @@
 ---
-title: "Motohiro Sato's Web Page"
-keywords: my homepage
-tags: [getting_started]
-sidebar: mydoc_sidebar
-permalink: index.html
-summary: These brief instructions will help you get started quickly with the theme. The other topics in this help provide additional information and detail about working with other aspects of this theme and Jekyll.
+layout: default
+title: Home
+nav_order: 1
+description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
+permalink: /
 ---
 
-{% include note.html content="If you're cloning this theme, you're probably writing documentation of some kind. I have a blog on technical writing here called <a alt='technical writing blog' href='http://idratherbewriting.com'>I'd Rather Be Writing</a>. If you'd like to stay updated with the latest trends, best practices, and other methods for writing documentation, consider <a href='https://tinyletter.com/tomjoht'>subscribing</a>. I also have a site on <a href='http://idratherbewriting.com/learnapidoc'>writing API documentation</a>." %}
+# Focus on writing good documentation
+{: .fs-9 }
 
-## Motohiro Sato（佐藤 初洋）
+Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
+{: .fs-6 .fw-300 }
+
+[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/pmarsceill/just-the-docs){: .btn .fs-5 .mb-4 .mb-md-0 }
+
+---
+# Motohiro Sato（佐藤 初洋）
 山形大学大学院理工学研究科 博士後期課程 地球共生圏科学専攻  
 Ph.D. student, Department of Science, Graduate School of Science and Technology, Yamagata University
 
 (Last modified: October 27, 2020)
 
-## Contact
+# Contact
 〒990-8560 山形市小白川町一丁目4-12 山形大学小白川キャンパス  
 Kojirakawa Campus Building, Yamagata University, 1-4-12 Kojirakawa-machi, Yamagata-city, 990-8560, Japan  
 E-mail: s201002d "at" st.yamagata-u.ac.jp (at -> @)
 
-## Research Interests
+# Research Interests
 火山岩の観察・分析を通して火山のマグマ供給系の解明に取り組んでいます．  
 Motohiro Sato studies the magma plumbing system beneath active volcanoes using geological, petrological, and geochemical techniques.  
 Key words: Volcanology / Igneous Petrology / Geochemistry / Diffusion Chronology
 - [Achievement](./md_docs/Publications.md)
 
-## Affiliated Academic Societies
+# Affiliated Academic Societies
 - Geochemical Society (April 2020 - )  
 - 日本火山学会 (July 2018 - )  
 - 日本地球惑星科学連合 (April 2017 - )
 
-## Education
+# Education
 - April 2020 - now : Ph.D., Earth Science  
 Department of Science, Yamagata University
 - April 2018 - March 2020 : M.Sc., Earth Science  
@@ -39,7 +45,7 @@ Department of Science, Yamagata University
 - April 2014 - March 2018 : B.Sc., Earth and Environmental Science  
 Department of Earth and Environmental Science, Yamagata University
 
-## Accounts
+# Accounts
 - GoogleScholar: [Motohiro Sato](https://scholar.google.com/citations?user=XssHnNwAAAAJ&hl=ja&authuser=1)
 - Mendeley: [Motohiro Sato](https://www.mendeley.com/profiles/motohiro-sato2/)
 - Facebook: [https://www.facebook.com/stmthr](https://www.facebook.com/stmthr)
@@ -47,8 +53,8 @@ Department of Earth and Environmental Science, Yamagata University
 - GitHub: [https://github.com/PrimordialOcean](https://github.com/PrimordialOcean)
 - Google photos: [https://photos.app.goo.gl/3j92vmfzJzAH6xTT6](https://photos.app.goo.gl/3j92vmfzJzAH6xTT6)
 
-## Articles
-- [Rhyolite-MELTSについて](./md_docs/Rhyolite-MELTS.md)
-- [計算機の環境構築メモ](./md_docs/machinesetup.md)
-- [ImageMagick覚書](./md_docs/imagemagick.md)
-- [データ整理・可視化メモ](./md_docs/datatips.md)
+# Articles
+- [Rhyolite-MELTSについて](./docs/Rhyolite-MELTS.md)
+- [計算機の環境構築メモ](./docs/machinesetup.md)
+- [ImageMagick覚書](./docs/imagemagick.md)
+- [データ整理・可視化メモ](./docs/datatips.md)

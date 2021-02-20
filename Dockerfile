@@ -1,14 +1,13 @@
-FROM jekyll/builder
+FROM ruby:2.6
 
-WORKDIR /tmp
-ADD Gemfile /tmp/
-ADD Gemfile.lock /tmp/
-RUN bundle install
+ENV LC_ALL C.UTF-8
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US.UTF-8
 
-FROM jekyll/jekyll
+WORKDIR /usr/src/app
 
-VOLUME /src
+COPY Gemfile just-the-docs.gemspec ./
+RUN gem install bundler && bundle install
+
 EXPOSE 4000
 
-WORKDIR /src
-ENTRYPOINT ["jekyll", "serve", "--livereload", "-H", "0.0.0.0"]
