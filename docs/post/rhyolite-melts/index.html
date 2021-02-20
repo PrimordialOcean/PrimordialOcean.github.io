@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Rhyolite-MELTSについて - Motohiro Sato&#39;s web site</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Rhyolite-MELTSについて" />
+<meta property="og:description" content="Rhyolite-MELTSの使い方について解説します．" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/rhyolite-melts/" />
+<meta property="article:published_time" content="2020-04-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-16T00:00:00+00:00" />
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Motohiro Sato&#39;s web site" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Motohiro Sato&#39;s web site</div>
+					<div class="logo__tagline">Ph.D student at Yamagata University</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/_aboutme/">
+				
+				<span class="menu__text">ABOUT ME</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/_achievement/">
+				
+				<span class="menu__text">ACHIEVEMENT</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Rhyolite-MELTSについて</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-04-16T00:00:00Z">April 16, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/articles/" rel="category">Articles</a>
+	</span>
+</div></div>
+		</header><div class="content post__content clearfix">
+			<p>Rhyolite-MELTSの使い方について解説します．</p>
+<h2 id="rhyolite-meltsとは">Rhyolite-MELTSとは</h2>
+<p>Rhyolite-MELTSとは相平衡計算ソフトMELTS (Ghiorso and Sack, 1995) の改良版である．
+従来のMELTSとの主な変更点は以下の2つである．</p>
+<ul>
+<li>石英とカリ長石端成分のエンタルピーを変更したことにより含水珪長質メルトに適用が可能になった．</li>
+<li>数値計算のアルゴリズムが変更され，計算の安定性が向上した．</li>
+</ul>
+<p>Rhyolite-MELTSの適用範囲はMELTSと同様で，500-2000℃, 0.1-2000 MPaの系に適用可能である．より高温・高圧の条件に適用可能なxMELTSやmdMELTSも開発されている．
+注意点としてRhyolite-MELTSはソリダスないしニアソリダスでの計算に適していない．また，角閃石や黒雲母が晶出する系にも向かないとされている．</p>
+<p>使用されている相平衡実験のデータは<a href="http://melts.ofm-research.org/database.html">MELTS公式サイト</a>にまとめられている．また使用した結果を公表する際は，以下の論文を引用することが推奨されている．</p>
+<ul>
+<li>Gualda G.A.R., Ghiorso M.S., Lemons R.V., Carley T.L. (2012) Rhyolite-MELTS: A modified calibration of MELTS optimized for silica-rich, fluid-bearing magmatic systems. Journal of Petrology, 53, 875-890.</li>
+<li>Ghiorso M.S., Gualda, G.A.R., (2015) An H2O-CO2 mixed fluid saturation model compatible with rhyolite-MELTS. Contributions to Mineralogy and Petrology 2015, in press</li>
+</ul>
+<h2 id="rhyolite-meltsubuntu-2004-ltsでの環境構築">Rhyolite-MELTS：Ubuntu 20.04 LTSでの環境構築</h2>
+<p>以下の環境で動作確認を行った．</p>
+<ul>
+<li>マシン:Lenovo ThinkPad x1 Carbon 2018年モデル（Intel Core i7-8550U @ 1.80GHz, RAM 16 GB）</li>
+<li>ホストOS：Windows 10 Home (ver. 2004)</li>
+<li>仮想マシン：VMware 16</li>
+<li>仮想OS：Ubuntu 20.04 LTS</li>
+</ul>
+<p>以下の作業はすべて仮想マシン上のUbuntu 20.04 LTS上で行っている．</p>
+<p>（日本語Remix版のみ必要）ディレクトリ名を日本語-&gt;英語にする．</p>
+<pre><code>$ LANG=C xdg-user-dirs-gtk-update
+</code></pre><p>ダイアログが表示されたら &ldquo;Update names&rdquo; をクリックする．
+ディレクトリ内にファイルが入っていると日本語名のものが残ってしまうので注意．</p>
+<p><a href="http://melts.ofm-research.org/unix.html">Rhyolite-MELTSのWebサイト</a>から &ldquo;64-bit Ubuntu 10.04 rhyolite-MELTS/pMELTS&rdquo; をクリックしてダウンロードする．
+実際には &ldquo;rhyolite-MELTS-Ubuntu-14.04-64bit.zip&rdquo; がダウンロードされる．適当なディレクトリに保存して展開する．</p>
+<pre><code>$ cd &quot;zipファイルをダウンロードしたディレクトリ&quot;
+$ unzip &quot;zipファイル名&quot;
+</code></pre><p><code>Melts-rhyolite-public</code>を実行しようとすると，次のようなエラーが発生することがある．</p>
+<pre><code>$ ./Melts-rhyolite-public
+./Melts-rhyolite-public: error while loading shared libraries: libpng12.so.0: cannot open shared object file: No such file or directory
+</code></pre><p>これはRhyolite-MELTSが動作するのに必要なライブラリの一つである<code>libpng12-0</code>がUbuntu 16.04以降のバージョンにはデフォルトで入っていないためである．
+libpng-12のリポジトリを追加してインストールする．</p>
+<pre><code>$ sudo add-apt-repository ppa:linuxuprising/libpng12
+$ sudo apt update
+$ sudo apt install libpng12-0
+</code></pre><h2 id="使用方法">使用方法</h2>
+<p>（最初の起動時のみ）<code>Melts-rhyolite-public</code>に実行権限を付加する．</p>
+<pre><code>$ chmod 755 Melts-rhyolite-public
+</code></pre><p><code>./Melts-rhyolite-public</code>を実行すると初めにバージョンの選択画面が現れる．</p>
+<ul>
+<li>ver. 1.0：MELTSモデルにおける石英とサニディンの自由エネルギーを補正したもの．流体相にはH2Oのみを想定している．</li>
+<li>ver. 1.1：揮発性成分の扱いがCO2も加味したGhiorso and Gualda (2015) のものに変更されている．石英が飽和している場合にのみ使用すべきと強調されている．</li>
+<li>ver. 1.2：ver 1.0の揮発性成分の扱いをアップデートしたもの．</li>
+</ul>
+<p><a href="http://melts.ofm-research.org/MELTS-decision-tree.html">MELTSの公式ページ</a>にどのバージョンを使うべきかが示されている．それによれば，揮発性成分が含まれない場合にはver. 1.0.x.を，含まれる場合のうち石英に飽和している場合にはver. 1.1.x.を，そうでない場合には最新版のver. 1.2.x.を用いるべきと書かれている．
+ver. 1.2.0を選択する場合の画面を例として示す．</p>
+<pre><code>$ ./Melts-rhyolite-public
+---&gt; Default calculation mode is rhyolite-MELTS (v. 1.0.2).  Change this? (y or n): y
+---&gt; Set calculation mode to rhyolite-MELTS (public release v 1.1.0)? (y or n): n
+---&gt; Set calculation mode to rhyolite-MELTS (public release v 1.2.0)? (y or n): y
+</code></pre><h3 id="簡単な使い方">簡単な使い方</h3>
+<ol>
+<li>画面左側の&quot;Bulk System&quot;の空欄に組成を入力する．このときいくつかの微量元素（Cr2O3, MnO NiO, CoO）や揮発性成分（CO2, SO3, Cl2O-1, F2O-1）については入力しなくても計算には問題ない．</li>
+<li>それ以外の元素については空欄の場合計算が破綻する可能性があるため，念のため小さい値 (e.g. 0.001) を入力しておく．</li>
+<li>&ldquo;Intensive Variables&quot;から，&ldquo;T, P&quot;をクリックして温度・圧力を，&ldquo;fO2 Content&quot;から酸素バッファーを入力する．</li>
+<li>&ldquo;Commands&rdquo;-&gt;&ldquo;Execute/Halt&quot;をクリックして計算を開始．終了するとMelts-rhyolite-publicと同じフォルダに計算結果が保存されている．</li>
+</ol>
+<h3 id="計算結果の見方">計算結果の見方</h3>
+<p>計算結果として&rdquo;{mineral}.tbl&quot;と&quot;melts.out&quot;ファイルが生成される．tblファイルは拡張子をcsvに書き換えておくと取り扱いが楽．</p>
+<table>
+<thead>
+<tr>
+<th>Index</th>
+<th>T (C)</th>
+<th>P (kbars)</th>
+<th>log(10) f O2</th>
+<th>mass (gm)</th>
+<th>rho (gm/cc)</th>
+<th>wt% SiO2</th>
+<th>&hellip;</th>
+<th>G (kJ)</th>
+<th>H (kJ)</th>
+<th>S (J/K)</th>
+<th>V (cc)</th>
+<th>Cp (J/K)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>インデックス</td>
+<td>温度</td>
+<td>圧力</td>
+<td>酸素分圧</td>
+<td>質量 [g]</td>
+<td>密度 [g/cc]</td>
+<td>元素組成 [wt%]</td>
+<td>&hellip;</td>
+<td>自由エネルギー</td>
+<td>エンタルピー</td>
+<td>エントロピー</td>
+<td>体積</td>
+<td>比熱</td>
+</tr>
+</tbody>
+</table>
+<h2 id="計算における注意点">計算における注意点</h2>
+<p><a href="https://sites.google.com/site/kentaueki/melts#004">JAMSTEC上木賢太さんのページ</a>に以下の指摘がなされている．筆者も同様の事象が発生することを確認済み．</p>
+<ul>
+<li>水に飽和している条件で&quot;Find liquidus&quot;を行うとリキダスが決まらずに計算が暴走する．これを回避する場合は&quot;Find liquidus&quot;を使わず，計算開始温度を確実にリキダスより高い温度 (1400℃とか) に決め打ちしていきなり&quot;Execute/Halt&quot;を行う．</li>
+</ul>
+<h2 id="参考文献">参考文献</h2>
+<ul>
+<li>MELTS公式：<a href="http://melts.ofm-research.org/">http://melts.ofm-research.org/</a></li>
+<li>Topic: Updated: enabling the WSL and installing the Rhyolite-MELTS GUI (new for 2018)  (Read 3075 times)：<a href="https://magmasource.caltech.edu/forum/index.php?topic=841.0">https://magmasource.caltech.edu/forum/index.php?topic=841.0</a></li>
+<li>JAMSTEC上木賢太さんの解説：<a href="https://sites.google.com/site/kentaueki/melts#004">https://sites.google.com/site/kentaueki/melts#004</a></li>
+<li>Trouble installing libpng12 on 19.04: <a href="https://askubuntu.com/questions/1137814/trouble-installing-libpng12-on-19-04">https://askubuntu.com/questions/1137814/trouble-installing-libpng12-on-19-04</a></li>
+</ul>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/earth-science/" rel="tag">Earth Science</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/melts/" rel="tag">MELTS</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/pc/" rel="tag">PC</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="/" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/imagemagick/">ImageMagick覚書</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/machinesetup/">計算機のセットアップ手順書</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/rhyolite-melts/">Rhyolite-MELTSについて</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/articles/">Articles</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/earth-science/" title="Earth Science">Earth Science (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/imagemagick/" title="ImageMagick">ImageMagick (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/melts/" title="MELTS">MELTS (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/pc/" title="PC">PC (3)</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Motohiro Sato&#39;s web site.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

@@ -6,6 +6,10 @@ theme = "mainroad"
 disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
+# GitHubでホスティング
+publishDir = "docs"
+canonifyurls = true
+
 
 #[Author]
 #  name = "Motohiro Sato"

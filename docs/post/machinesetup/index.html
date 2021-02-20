@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>計算機のセットアップ手順書 - Motohiro Sato&#39;s web site</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="計算機のセットアップ手順書" />
+<meta property="og:description" content="最近PCを新しくしてセットアップに結構手間取ったので備忘録として．" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/machinesetup/" />
+<meta property="article:published_time" content="2021-01-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-01-02T00:00:00+00:00" />
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Motohiro Sato&#39;s web site" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Motohiro Sato&#39;s web site</div>
+					<div class="logo__tagline">Ph.D student at Yamagata University</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/_aboutme/">
+				
+				<span class="menu__text">ABOUT ME</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/_achievement/">
+				
+				<span class="menu__text">ACHIEVEMENT</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">計算機のセットアップ手順書</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-01-02T00:00:00Z">January 02, 2021</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/articles/" rel="category">Articles</a>
+	</span>
+</div></div>
+		</header><div class="content post__content clearfix">
+			<p>最近PCを新しくしてセットアップに結構手間取ったので備忘録として．</p>
+<h2 id="環境">環境</h2>
+<ul>
+<li>OS: Windows 10 Home</li>
+<li>MB: ASRock B550 Pro4</li>
+<li>CPU: AMD Ryzen 5 3600</li>
+<li>GPU: MSI GTX 1650</li>
+<li>RAM: Crucial 16GB DDR4-2666 UDIMM x2</li>
+</ul>
+<h2 id="必要なソフトウェアのインストール">必要なソフトウェアのインストール</h2>
+<h2 id="wslのセットアップ">WSLのセットアップ</h2>
+<p>最も一般的にはパッケージ管理aptを利用する．</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># パッケージ一覧の更新．こまめに行うようにする．特にリポジトリの追加・削除後には必ず行うこと</span>
+$ sudo apt update
+<span style="color:#75715e"># パッケージの更新</span>
+$ sudo apt upgrade
+<span style="color:#75715e"># インストール済みのパッケージを表示</span>
+$ apt list --installed
+<span style="color:#75715e"># パッケージのインストール</span>
+$ sudo apt install <span style="color:#e6db74">${</span>package<span style="color:#e6db74">}</span>
+<span style="color:#75715e"># パッケージのアンインストール．完全に削除する場合は--purgeをつける</span>
+$ sudo apt remove <span style="color:#e6db74">${</span>package<span style="color:#e6db74">}</span>
+$ sudo apt remove <span style="color:#e6db74">${</span>package<span style="color:#e6db74">}</span> --purge
+<span style="color:#75715e"># 不要になったファイルを削除．表示されたら実行する</span>
+$ sudo apt autoremove
+</code></pre></div><p>debファイルからインストールする場合は以下の方法を使う．</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt install ./<span style="color:#e6db74">${</span>deb_filename<span style="color:#e6db74">}</span>.deb
+</code></pre></div><p>なお，<code>dpkg -i ${deb_filename}.deb</code>は古い方法であるため非推奨．</p>
+<p>aptに代わる？新しいパッケージ管理ツールとしてSnappyが推されている．
+サンドボックス機能がありaptでインストールするよりセキュアらしい．</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># パッケージを検索</span>
+$ snap find <span style="color:#e6db74">${</span>package<span style="color:#e6db74">}</span>
+<span style="color:#75715e"># インストール済みのパッケージを表示</span>
+$ snap list --all
+<span style="color:#75715e"># パッケージをインストール．--classicが必要かどうかはfindで確認</span>
+$ sudo snap install <span style="color:#e6db74">${</span>package<span style="color:#e6db74">}</span>
+$ sudo snap install <span style="color:#e6db74">${</span>package<span style="color:#e6db74">}</span> --classic
+<span style="color:#75715e"># アンインストール</span>
+$ sudo snap remove <span style="color:#e6db74">${</span>package<span style="color:#e6db74">}</span>
+<span style="color:#75715e"># アップデート</span>
+$ sudo snap refresh
+</code></pre></div><p>aptでインストールできる全てのパッケージをsnapでインストールできる訳ではないことに注意．
+また，いくつかのアプリケーションはsnapでインストールすると正常に動かない．特に権限関係のエラーが多い印象．当面はaptでインストールするほうが無難．</p>
+<ul>
+<li>
+<p>VScode: 日本語入力ができない</p>
+</li>
+<li>
+<p>rclone: &ldquo;permission denied&rdquo; と表示されクラウドストレージに接続できない（su権限ならできるかも？）</p>
+</li>
+<li>
+<p>tree: /mediaなどいくつかのディレクトリが開けない</p>
+</li>
+<li>
+<p>ufw: ファイアウォールの設定</p>
+</li>
+<li>
+<p>tmux: ターミナルマルチプレクサ</p>
+</li>
+<li>
+<p>ranger: ファイラ</p>
+</li>
+<li>
+<p>tree: ディレクトリ構造の可視化</p>
+</li>
+<li>
+<p>NeoVim: エディタ</p>
+</li>
+<li>
+<p>VSCode: エディタ</p>
+</li>
+<li>
+<p>Mendeley: 文献管理</p>
+</li>
+<li>
+<p>Thunderbird: メーラー</p>
+</li>
+<li>
+<p>gimp: ビットマップイメージの加工</p>
+</li>
+<li>
+<p>inkscape: ベクタイメージの作成</p>
+</li>
+<li>
+<p>rclone: クラウドと同期（後述）</p>
+</li>
+<li>
+<p>Julia: 電卓</p>
+</li>
+<li>
+<p>ImageJ: 画像解析</p>
+</li>
+<li>
+<p>VLC: メディアファイル再生</p>
+</li>
+</ul>
+<h2 id="tmuxのメモ">tmuxのメモ</h2>
+<p><code>prefix</code>はデフォルトで<code>ctrl-b</code>に割り当てられている．
+起動</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tmux
+</code></pre></div><p>セッションの確認</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tmux ls
+</code></pre></div><p>ペインの操作</p>
+<table>
+<thead>
+<tr>
+<th>tmuxコマンド</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>prefix + &quot;</code></td>
+<td>水平分割</td>
+</tr>
+<tr>
+<td><code>prefix + %</code></td>
+<td>垂直分割</td>
+</tr>
+<tr>
+<td><code>prefix + o</code></td>
+<td>ペイン間移動</td>
+</tr>
+<tr>
+<td><code>prefix + x</code></td>
+<td>ペイン分割解除</td>
+</tr>
+</tbody>
+</table>
+<p>コピーモード関係</p>
+<table>
+<thead>
+<tr>
+<th>tmuxコマンド</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>prefix + [</code></td>
+<td>copyモード</td>
+</tr>
+<tr>
+<td><code>prefix + ]</code> or <code>q</code></td>
+<td>copyモード解除</td>
+</tr>
+<tr>
+<td><code>Space</code></td>
+<td>copy開始位置指定</td>
+</tr>
+<tr>
+<td><code>Enter</code></td>
+<td>copy終了位置指定</td>
+</tr>
+<tr>
+<td><code>prefix + &gt;</code></td>
+<td>クリップボードへ書き出し</td>
+</tr>
+</tbody>
+</table>
+<h2 id="python環境の構築">Python環境の構築</h2>
+<p>pipとvenvをインストール．</p>
+<ul>
+<li>numpy: 多次元配列を扱える数値計算ツール</li>
+<li>scipy: 統計，科学計算</li>
+<li>pandas: データの整形</li>
+<li>matplotlib: データの可視化</li>
+<li>jupyterlab: アドホック分析ツール</li>
+<li>numba: 事前にコンパイルして計算を高速化</li>
+</ul>
+<p>2020年1月時点で最新版のPython3.9系はnumbaに対応していないのでバージョンを指定してインストールする．</p>
+<pre><code>$ scoop install python@3.8.5
+</code></pre><p>必要なライブラリをインストール．</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ps1" data-lang="ps1">$ python3 -m venv ${env_name}
+$ source ${env_name}/Scripts/Activate.ps1
+(${env_name})$ pip3 install numpy scipy pandas matplotlib jupyterlab numba
+</code></pre></div><h2 id="rclone">rclone</h2>
+<p>Ubuntuはクラウドストレージの公式クライアントが提供されていない場合が多々あることが問題だが，その代替となるソフトウェア．
+言うなればクラウドストレージ版rsync．</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ps1" data-lang="ps1"><span style="color:#75715e"># クラウドストレージ全体をコピーする際は特にアスタリスク等は不要</span>
+$ rclone copy dropbox<span style="color:#960050;background-color:#1e0010">:</span> ${path}
+</code></pre></div><h2 id="エディタneovimの設定">エディタ（NeoVim）の設定</h2>
+<p>init.vimの設定</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#a6e22e">set</span> <span style="color:#a6e22e">number</span> <span style="color:#75715e">&#34;行番号を表示</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">set</span> <span style="color:#a6e22e">tabstop</span>=<span style="color:#ae81ff">4</span> <span style="color:#75715e">&#34;タブでスペース4つ</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">set</span> <span style="color:#a6e22e">shiftwidth</span>=<span style="color:#ae81ff">4</span> <span style="color:#75715e">&#34;自動インデント時にスペース4つ挿入</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">set</span> <span style="color:#a6e22e">clipboard</span>=<span style="color:#a6e22e">unnamed</span> <span style="color:#75715e">&#34;yankした文字列をクリップボードにコピー</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">set</span> <span style="color:#a6e22e">hls</span> <span style="color:#75715e">&#34;検索した文字をハイライト</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">set</span> <span style="color:#a6e22e">mouse</span>=<span style="color:#a6e22e">a</span> <span style="color:#75715e">&#34;マウス操作に対応</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">set</span> <span style="color:#a6e22e">list</span> <span style="color:#75715e">&#34;空白文字を可視化</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h2 id="メーラ-thunderbird-の設定">メーラ (Thunderbird) の設定</h2>
+<p>GmailのSMTPサーバの設定は以下の通り．なお，大学のアドレス（@st.yamagata-u.ac.jp）もGmail扱いになったので同様に設定できる．</p>
+<ul>
+<li>Server Name: smtp.gmail.com</li>
+<li>Port: 465</li>
+<li>Connection security: SSL/TLS</li>
+<li>Authentication method: OAuth2</li>
+<li>User Name: 使用するメールアドレス</li>
+</ul>
+<p>OKを押しても特にパスワードを求められないが，最初の送信時に認証画面が表示されるのでそこにパスワードを入力する．</p>
+<p>複数のアドレスを一つのGmailアカウントに転送している．
+受信したメールはGmailのフィルタによって自動的にアカウント別に振り分けることができるのだが，Thunderbird側から送信するメールはGmail側でフィルタを設定しても適用されない．
+そのためThunderbird側でフィルタを設定する必要がある．</p>
+<p>テキスト形式でやりとりしたいので，&ldquo;Compose messages in HTML format&rdquo; のチェックを外す．</p>
+<p>使い勝手を良くするため，以下のアドオンをインストールする．主にGmailとの連携に関するもの．</p>
+<ul>
+<li>CardBook: Gmailのアドレス帳と同期する．以前はgContactSyncというエクステンションがあったが現在は使用不能？</li>
+<li>Provider for Google Calendar: GoogleカレンダーのiCalリンクを貼り付けても読めるがThunderbird側からの書き込みができないのでこれを使う．</li>
+<li>Send Later: 時間指定送信機能を追加．</li>
+</ul>
+<p>Firefoxと異なりThunderbirdは設定を同期することができない．そこでメールや設定データが格納されているプロファイルフォルダをクラウドで同期することを考える．</p>
+<ul>
+<li><code>%AppData%Roaming\Thunderbird\Profiles</code>に<code>default-release</code>というフォルダがあるのでこれを移動する．</li>
+<li><code>%AppData%Roaming\Thunderbird</code>にある<code>profiles.ini</code>の<code>Path=</code>以降を移動先に書き換える．</li>
+</ul>
+<h2 id="officeのインストール">Officeのインストール</h2>
+<p>基本的にOfficeはExcelとPowerPoint，Wordしか使わないのでそれ以外をインストールしないように設定する．
+Micorsoft公式サイトの<a href="https://docs.microsoft.com/ja-jp/deployoffice/overview-office-deployment-tool">リンク</a>からOffice Deployment Toolをダウンロードし，適当なディレクトリに解凍する．同じディレクトリ中に<code>${filename}.xml</code>を作成し，インストールしないソフトウェアを<code>&lt;ExcludeApp ID=&quot;softwarename&quot;&gt;</code>中に書き込む．</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;Configuration&gt;</span>
+  <span style="color:#f92672">&lt;Add</span> <span style="color:#a6e22e">OfficeClientEdition=</span><span style="color:#e6db74">&#34;32&#34;</span><span style="color:#f92672">&gt;</span>
+  	<span style="color:#f92672">&lt;Product</span> <span style="color:#a6e22e">ID=</span><span style="color:#e6db74">&#34;O365ProPlusRetail&#34;</span><span style="color:#f92672">&gt;</span>
+  		<span style="color:#f92672">&lt;Language</span> <span style="color:#a6e22e">ID=</span><span style="color:#e6db74">&#34;ja-jp&#34;</span><span style="color:#f92672">/&gt;</span>
+  		<span style="color:#f92672">&lt;ExcludeApp</span> <span style="color:#a6e22e">ID=</span><span style="color:#e6db74">&#34;Access&#34;</span><span style="color:#f92672">/&gt;</span>
+  		<span style="color:#f92672">&lt;ExcludeApp</span> <span style="color:#a6e22e">ID=</span><span style="color:#e6db74">&#34;Groove&#34;</span><span style="color:#f92672">/&gt;</span>    <span style="color:#75715e">&lt;!-- Onedrive for Business --&gt;</span>
+  		<span style="color:#f92672">&lt;ExcludeApp</span> <span style="color:#a6e22e">ID=</span><span style="color:#e6db74">&#34;Lync&#34;</span><span style="color:#f92672">/&gt;</span>      <span style="color:#75715e">&lt;!-- Skype for Business --&gt;</span>
+  		<span style="color:#f92672">&lt;ExcludeApp</span> <span style="color:#a6e22e">ID=</span><span style="color:#e6db74">&#34;OneDrive&#34;</span><span style="color:#f92672">/&gt;</span>
+  		<span style="color:#f92672">&lt;ExcludeApp</span> <span style="color:#a6e22e">ID=</span><span style="color:#e6db74">&#34;OneNote&#34;</span><span style="color:#f92672">/&gt;</span>
+  		<span style="color:#f92672">&lt;ExcludeApp</span> <span style="color:#a6e22e">ID=</span><span style="color:#e6db74">&#34;Outlook&#34;</span><span style="color:#f92672">/&gt;</span>
+  		<span style="color:#f92672">&lt;ExcludeApp</span> <span style="color:#a6e22e">ID=</span><span style="color:#e6db74">&#34;Publisher&#34;</span><span style="color:#f92672">/&gt;</span>
+  	<span style="color:#f92672">&lt;/Product&gt;</span>
+  <span style="color:#f92672">&lt;/Add&gt;</span>
+<span style="color:#f92672">&lt;/Configuration&gt;</span>
+</code></pre></div><p>以下のコマンドを実行すると管理者権限を求める画面が立ち上がり，あとは通常通りインストールが実行される．</p>
+<pre><code>$ .\setup.exe /configure .\${filename}.xml
+</code></pre><h2 id="sshログインできるようにしておく">sshログインできるようにしておく</h2>
+<p>クライアント側でキーペアを作成</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mkdir .ssh
+$ cd .ssh
+$ ssh-keygen -t rsa
+<span style="color:#75715e"># このあと3回Enterを押す</span>
+</code></pre></div><p>ホスト側の準備</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># OpenSSH-Serverのインストール</span>
+$ sudo apt install openssh-server
+</code></pre></div><p>公開鍵を追加する</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># パーミッションの変更</span>
+$ chmod <span style="color:#ae81ff">700</span> .ssh
+$ cd ~/.ssh
+$ chmod <span style="color:#ae81ff">600</span> id_rsa.pub
+<span style="color:#75715e"># 公開鍵の追加</span>
+<span style="color:#75715e"># authorized_keysを新規に作成する場合</span>
+$ mv id_rsa.pub authorized_keys
+<span style="color:#75715e"># authorized_keysがすでに存在する場合，catコマンドで追記</span>
+$ cat id_rsa.pub &gt;&gt; authorized_keys
+</code></pre></div><p>簡単にssh接続できるようにクライアントにエイリアスを追加</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># ~/.ssh/config</span>
+Host hostname
+    Hostname <span style="color:#e6db74">&#39;IP adress&#39;</span>
+    User <span style="color:#e6db74">&#39;username&#39;</span>
+    IdentityFile ~/.ssh/id_rsa
+
+$ ssh hostname
+</code></pre></div><h2 id="クライアント側の準備">クライアント側の準備</h2>
+<ul>
+<li>Windows側では6000番ポートを開放</li>
+<li>以下のurlから<a href="https://sourceforge.net/projects/vcxsrv/">VcXsrv</a>をインストール</li>
+</ul>
+<h2 id="ホスト側の準備">ホスト側の準備</h2>
+<ul>
+<li>X転送ができるようにIPアドレスを追加</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># IPアドレスを追加しておく</span>
+$ export DISPLAY<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;クライアントのIPアドレス&#39;</span>:0.0
+$ echo $DISPLAY
+<span style="color:#e6db74">&#39;クライアントのIPアドレス&#39;</span>:0.0
+</code></pre></div>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/pc/" rel="tag">PC</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="/" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/imagemagick/">ImageMagick覚書</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/machinesetup/">計算機のセットアップ手順書</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/rhyolite-melts/">Rhyolite-MELTSについて</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/articles/">Articles</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/earth-science/" title="Earth Science">Earth Science (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/imagemagick/" title="ImageMagick">ImageMagick (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/melts/" title="MELTS">MELTS (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/pc/" title="PC">PC (3)</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Motohiro Sato&#39;s web site.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

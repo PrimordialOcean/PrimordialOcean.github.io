@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Motohiro Sato&#39;s web site</title>
+    <link>/</link>
+    <description>Recent content on Motohiro Sato&#39;s web site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 20 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ACHIEVEMENT</title>
+      <link>/_achievement/</link>
+      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/_achievement/</guid>
+      <description>Journal Articles  Hiwatashi, H., Ban, M., Álvarez-Valero, A.M., Kriegsman, L.M., and Sato, M. (2020) Disequilibrium phenocrystic assemblage within dacites reveals magma mixing and stratified chamber after crustal assimilation at El Hoyazo volcano, SE Spain. Lithos, in press.  International Confernce Poster Presentation (without Peer Review)  Sato, M., and Ban, M., Magma plumbing system at Zao volcano, NE Japan: time scales of magmatic processes revealed by chemical zoning in orthopyroxene phenocrysts.</description>
+    </item>
+    
+    <item>
+      <title>ImageMagick覚書</title>
+      <link>/post/imagemagick/</link>
+      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/imagemagick/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>計算機のセットアップ手順書</title>
+      <link>/post/machinesetup/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/machinesetup/</guid>
+      <description>&lt;p&gt;最近PCを新しくしてセットアップに結構手間取ったので備忘録として．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ABOUT ME</title>
+      <link>/_aboutme/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/_aboutme/</guid>
+      <description>Motohiro Sato（佐藤 初洋）
+山形大学大学院理工学研究科 博士後期課程 地球共生圏科学専攻
+Ph.D. student, Department of Science, Graduate School of Science and Technology, Yamagata University
+Contact 〒990-8560 山形市小白川町一丁目4-12 山形大学小白川キャンパス
+Kojirakawa Campus Building, Yamagata University, 1-4-12 Kojirakawa-machi, Yamagata-city, 990-8560, Japan
+E-mail: s201002d &amp;ldquo;at&amp;rdquo; st.yamagata-u.ac.jp (at -&amp;gt; @)
+Research Interests 火山岩の観察・分析を通して火山のマグマ供給系の解明に取り組んでいます．
+Motohiro Sato studies the magma plumbing system beneath active volcanoes using geological, petrological, and geochemical techniques.
+Key words: Volcanology / Igneous Petrology / Geochemistry / Diffusion Chronology</description>
+    </item>
+    
+    <item>
+      <title>Rhyolite-MELTSについて</title>
+      <link>/post/rhyolite-melts/</link>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/rhyolite-melts/</guid>
+      <description>&lt;p&gt;Rhyolite-MELTSの使い方について解説します．&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

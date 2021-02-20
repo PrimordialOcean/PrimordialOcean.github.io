@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on Motohiro Sato&#39;s web site</title>
+    <link>/categories/articles/</link>
+    <description>Recent content in Articles on Motohiro Sato&#39;s web site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 20 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ImageMagick覚書</title>
+      <link>/post/imagemagick/</link>
+      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/imagemagick/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>計算機のセットアップ手順書</title>
+      <link>/post/machinesetup/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/machinesetup/</guid>
+      <description>&lt;p&gt;最近PCを新しくしてセットアップに結構手間取ったので備忘録として．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rhyolite-MELTSについて</title>
+      <link>/post/rhyolite-melts/</link>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/rhyolite-melts/</guid>
+      <description>&lt;p&gt;Rhyolite-MELTSの使い方について解説します．&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

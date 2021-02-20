@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Earth Science on Motohiro Sato&#39;s web site</title>
+    <link>/tags/earth-science/</link>
+    <description>Recent content in Earth Science on Motohiro Sato&#39;s web site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 16 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/earth-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rhyolite-MELTSについて</title>
+      <link>/post/rhyolite-melts/</link>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/rhyolite-melts/</guid>
+      <description>&lt;p&gt;Rhyolite-MELTSの使い方について解説します．&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

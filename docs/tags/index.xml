@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Motohiro Sato&#39;s web site</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Motohiro Sato&#39;s web site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 20 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ImageMagick</title>
+      <link>/tags/imagemagick/</link>
+      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/imagemagick/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PC</title>
+      <link>/tags/pc/</link>
+      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/pc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Earth Science</title>
+      <link>/tags/earth-science/</link>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/earth-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MELTS</title>
+      <link>/tags/melts/</link>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/melts/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
