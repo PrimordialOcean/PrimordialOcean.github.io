@@ -3,4 +3,4 @@ languageCode = "ja"
 title = "Motohiro Sato's Web Site"
 disableKinds = ["RSS", "sitemap"]
 publishDir = "docs"
-theme = "just-the-docs"
+theme = "Mainroad"
