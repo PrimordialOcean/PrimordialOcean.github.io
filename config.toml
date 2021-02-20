@@ -1,3 +1,6 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://primordialocean.github.io/"
+languageCode = "ja"
+title = "Motohiro Sato's Web Site"
+disableKinds = ["RSS", "sitemap"]
+contentDir = "content"
+theme = "just-the-docs"
