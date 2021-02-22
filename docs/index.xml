@@ -6,9 +6,18 @@
     <description>Recent content on Motohiro Sato&#39;s web site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 20 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>ACHIEVEMENT</title>
+      <title>R言語メモ</title>
+      <link>/post/rtips/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/rtips/</guid>
+      <description>&lt;p&gt;R（GNU R）はフリーの統計解析およびグラフィックスのための言語であり，モデリング，検定，時系列解析などの様々な統計用ツールを利用できる．公式サイトは&lt;a href=&#34;https://cran.r-project.org/&#34;&gt;https://cran.r-project.org/&lt;/a&gt;．R言語の環境構築，基礎的なコマンド，研究で有用なパッケージの使い方についてまとめる．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Achievement</title>
       <link>/achievement/</link>
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
       
@@ -44,17 +53,14 @@
     </item>
     
     <item>
-      <title>ABOUT ME</title>
+      <title>About Me</title>
       <link>/aboutme/</link>
       <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>/aboutme/</guid>
-      <description>Motohiro Sato（佐藤 初洋）
-山形大学大学院理工学研究科 博士後期課程 地球共生圏科学専攻
-Ph.D. student, Department of Science, Graduate School of Science and Technology, Yamagata University
-Affiliated Academic Societies  Geochemical Society (April 2020 - ) 日本火山学会 (July 2018 - ) 日本地球惑星科学連合 (April 2017 - )  Education  April 2020 - now : Ph.D., Earth Science
-Department of Science, Yamagata University April 2018 - March 2020 : M.Sc., Earth Science
-Department of Science, Yamagata University April 2014 - March 2018 : B.</description>
+      <description>Basic Information  Name (Jpn): 佐藤 初洋 Name (Eng): Motohiro Sato Birth: Miyagi, Japan Living: Yamagata, Japan  Affiliated Academic Societies  Geochemical Society (April 2020 - ) 日本火山学会 (July 2018 - ) 日本地球惑星科学連合 (April 2017 - )  Education  April 2020 - now : Ph.D., Earth Science
+Department of Science, Graduate School of Science and Technology, Yamagata University April 2018 - March 2020 : M.Sc., Earth Science
+Department of Science, Graduate School of Science and Technology, Yamagata University April 2014 - March 2018 : B.</description>
     </item>
     
     <item>

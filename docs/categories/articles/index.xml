@@ -6,7 +6,16 @@
     <description>Recent content in Articles on Motohiro Sato&#39;s web site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 20 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/articles/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>R言語メモ</title>
+      <link>/post/rtips/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/rtips/</guid>
+      <description>&lt;p&gt;R（GNU R）はフリーの統計解析およびグラフィックスのための言語であり，モデリング，検定，時系列解析などの様々な統計用ツールを利用できる．公式サイトは&lt;a href=&#34;https://cran.r-project.org/&#34;&gt;https://cran.r-project.org/&lt;/a&gt;．R言語の環境構築，基礎的なコマンド，研究で有用なパッケージの使い方についてまとめる．&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>ImageMagick覚書</title>
       <link>/post/imagemagick/</link>
