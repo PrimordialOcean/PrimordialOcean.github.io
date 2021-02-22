@@ -35,7 +35,9 @@ Save workspace image? [y/n/c]: y
 ```
 有用そうなパッケージを以下にまとめる．
 - `ggplot2`：データの可視化用ライブラリ．Pythonの`matplotlib`に近い．
+- `ggpubr`：ggplot2よりもデフォルトで論文向きの図を作ることができる．
 - `openxlsx`：Excelファイルの読み書き．
+- `remotes`：GitHub上のパッケージを利用できる．
 
 ## 使い方
 ### パッケージのインポート
