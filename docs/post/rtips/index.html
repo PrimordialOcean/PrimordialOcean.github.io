@@ -111,6 +111,18 @@ Save workspace image? [y/n/c]<span style="color:#960050;background-color:#1e0010
 <li><code>ggplot2</code>：データの可視化用ライブラリ．Pythonの<code>matplotlib</code>に近い．</li>
 <li><code>openxlsx</code>：Excelファイルの読み書き．</li>
 </ul>
+<h2 id="使い方">使い方</h2>
+<h3 id="パッケージのインポート">パッケージのインポート</h3>
+<p><code>library(packagename)</code> で導入できる．</p>
+<h3 id="関数定義">関数定義</h3>
+<p>関数名は英語動詞で開始し，lowerCamelCase（小文字で書き始め，単語の先頭が大文字）にする．</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># 関数定義</span>
+getExcelData <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">function</span>(filename) {
+    data <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read.xlsx</span>(filename)
+    <span style="color:#a6e22e">return</span>(data)
+}
+df <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">getExcelData</span>(<span style="color:#e6db74">&#34;compdata.xlsx&#34;</span>)
+</code></pre></div><h3 id="図の出力">図の出力</h3>
 <h2 id="参考になるサイト">参考になるサイト</h2>
 <ul>
 <li><a href="https://cran.r-project.org/">R公式</a></li>

@@ -37,6 +37,23 @@ Save workspace image? [y/n/c]: y
 - `ggplot2`：データの可視化用ライブラリ．Pythonの`matplotlib`に近い．
 - `openxlsx`：Excelファイルの読み書き．
 
+## 使い方
+### パッケージのインポート
+`library(packagename)` で導入できる．
+
+### 関数定義
+関数名は英語動詞で開始し，lowerCamelCase（小文字で書き始め，単語の先頭が大文字）にする．
+```r
+# 関数定義
+getExcelData <- function(filename) {
+    data <- read.xlsx(filename)
+    return(data)
+}
+df <- getExcelData("compdata.xlsx")
+```
+
+### 図の出力
+
 ## 参考になるサイト
 - [R公式](https://cran.r-project.org/)
 - [RjpWiki](http://www.okadajp.org/RWiki/)
