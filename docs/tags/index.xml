@@ -8,6 +8,15 @@
     <language>ja</language>
     <lastBuildDate>Mon, 22 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>PC</title>
+      <link>/tags/pc/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/pc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>R</title>
       <link>/tags/r/</link>
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
@@ -31,15 +40,6 @@
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>/tags/pandas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PC</title>
-      <link>/tags/pc/</link>
-      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/pc/</guid>
       <description></description>
     </item>
     

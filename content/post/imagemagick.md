@@ -8,13 +8,11 @@ tags:
   - "PC"
 ---
 
-<!--more-->
-
-## Introduction
 ImageMagickはコマンドライン上で利用できるビットマップイメージの作成，編集，変換などを行うツール．
 PNG, JPEG, GIF, TIFF, Postscript, PDF, SVGなどの200以上のファイル形式に対応している．
-マルチスレッド処理に対応しているためGB単位の巨大なファイルでも高速に処理できることが特徴．
-公式サイトは [https://imagemagick.org](https://imagemagick.org)．
+マルチスレッド処理に対応しているためGB単位の巨大なファイルでも高速に処理できることが特徴．公式サイトは [https://imagemagick.org](https://imagemagick.org)．
+よく使うコマンドについてメモ．
+<!--more-->
 
 ### インストール
 インストールは特にこだわりがなければaptでインストールできる．
@@ -53,4 +51,3 @@ Windowsのconvertとと混同した場合，最悪Windowsシステム自体を�
 -<policy domain="resource" name="memory" value="256MiB"/>
 +<policy domain="resource" name="memory" value="4096MiB"/>
 ```
-[Return to the home page](../index.md)

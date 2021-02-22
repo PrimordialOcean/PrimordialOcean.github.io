@@ -17,12 +17,24 @@
     </item>
     
     <item>
+      <title>計算機のセットアップ手順書</title>
+      <link>/post/machinesetup/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/machinesetup/</guid>
+      <description>&lt;p&gt;最近PCを新しくしてセットアップに結構手間取ったので備忘録として．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>ImageMagick覚書</title>
       <link>/post/imagemagick/</link>
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>/post/imagemagick/</guid>
-      <description></description>
+      <description>&lt;p&gt;ImageMagickはコマンドライン上で利用できるビットマップイメージの作成，編集，変換などを行うツール．
+PNG, JPEG, GIF, TIFF, Postscript, PDF, SVGなどの200以上のファイル形式に対応している．
+マルチスレッド処理に対応しているためGB単位の巨大なファイルでも高速に処理できることが特徴．公式サイトは &lt;a href=&#34;https://imagemagick.org&#34;&gt;https://imagemagick.org&lt;/a&gt;．
+よく使うコマンドについてメモ．&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -32,15 +44,6 @@
       
       <guid>/post/datatips/</guid>
       <description>&lt;p&gt;Pandasでよく出てくる作業を備忘録として．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>計算機のセットアップ手順書</title>
-      <link>/post/machinesetup/</link>
-      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/post/machinesetup/</guid>
-      <description>&lt;p&gt;最近PCを新しくしてセットアップに結構手間取ったので備忘録として．&lt;/p&gt;</description>
     </item>
     
     <item>

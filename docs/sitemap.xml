@@ -18,6 +18,11 @@
   </url>
   
   <url>
+    <loc>/tags/pc/</loc>
+    <lastmod>2021-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/</loc>
     <lastmod>2021-02-22T00:00:00+00:00</lastmod>
   </url>
@@ -34,6 +39,11 @@
   
   <url>
     <loc>/tags/</loc>
+    <lastmod>2021-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/machinesetup/</loc>
     <lastmod>2021-02-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -58,11 +68,6 @@
   </url>
   
   <url>
-    <loc>/tags/pc/</loc>
-    <lastmod>2021-02-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/python/</loc>
     <lastmod>2021-02-20T00:00:00+00:00</lastmod>
   </url>
@@ -70,11 +75,6 @@
   <url>
     <loc>/post/datatips/</loc>
     <lastmod>2021-02-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/machinesetup/</loc>
-    <lastmod>2021-01-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>

@@ -8,7 +8,10 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="ImageMagick覚書" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="ImageMagickはコマンドライン上で利用できるビットマップイメージの作成，編集，変換などを行うツール．
+PNG, JPEG, GIF, TIFF, Postscript, PDF, SVGなどの200以上のファイル形式に対応している．
+マルチスレッド処理に対応しているためGB単位の巨大なファイルでも高速に処理できることが特徴．公式サイトは https://imagemagick.org．
+よく使うコマンドについてメモ．" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/post/imagemagick/" />
 <meta property="article:published_time" content="2021-02-20T00:00:00+00:00" />
@@ -90,11 +93,10 @@
 	</span>
 </div></div>
 		</header><div class="content post__content clearfix">
-			<h2 id="introduction">Introduction</h2>
-<p>ImageMagickはコマンドライン上で利用できるビットマップイメージの作成，編集，変換などを行うツール．
+			<p>ImageMagickはコマンドライン上で利用できるビットマップイメージの作成，編集，変換などを行うツール．
 PNG, JPEG, GIF, TIFF, Postscript, PDF, SVGなどの200以上のファイル形式に対応している．
-マルチスレッド処理に対応しているためGB単位の巨大なファイルでも高速に処理できることが特徴．
-公式サイトは <a href="https://imagemagick.org">https://imagemagick.org</a>．</p>
+マルチスレッド処理に対応しているためGB単位の巨大なファイルでも高速に処理できることが特徴．公式サイトは <a href="https://imagemagick.org">https://imagemagick.org</a>．
+よく使うコマンドについてメモ．</p>
 <h3 id="インストール">インストール</h3>
 <p>インストールは特にこだわりがなければaptでインストールできる．</p>
 <pre><code>$ sudo apt install imagemagick
@@ -128,7 +130,7 @@ Windowsのconvertとと混同した場合，最悪Windowsシステム自体を�
 </ul>
 <pre><code>-&lt;policy domain=&quot;resource&quot; name=&quot;memory&quot; value=&quot;256MiB&quot;/&gt;
 +&lt;policy domain=&quot;resource&quot; name=&quot;memory&quot; value=&quot;4096MiB&quot;/&gt;
-</code></pre><p><a href="../index.md">Return to the home page</a></p>
+</code></pre>
 		</div>
 		<footer class="post__footer">
 			
@@ -165,9 +167,9 @@ Windowsのconvertとと混同した場合，最悪Windowsシステム自体を�
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item"><a class="widget__link" href="/post/rtips/">R言語メモ</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/machinesetup/">計算機のセットアップ手順書</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/imagemagick/">ImageMagick覚書</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/datatips/">データ下処理メモ</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/machinesetup/">計算機のセットアップ手順書</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/rhyolite-melts/">Rhyolite-MELTSについて</a></li>
 		</ul>
 	</div>
