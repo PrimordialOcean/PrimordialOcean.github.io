@@ -34,6 +34,7 @@ https://doi.org/10.2465/gkk.48.127
 - 佐藤初洋 (2017) 2017年度 学生合同巡検参加報告. 日本地質学会News, Vol. 20, No. 10, p. 10-11.
 
 ## Awards
+- 令和2年度山形大学学生表彰
 - 2020年度日本火山学会学生優秀発表賞 [http://www.kazan-g.sakura.ne.jp/J/page_tpl_73.html](http://www.kazan-g.sakura.ne.jp/J/page_tpl_73.html)
 - 2020年度ティーデマン・ふすま賞 [https://www.sci.yamagata-u.ac.jp/news/detail/579/](https://www.sci.yamagata-u.ac.jp/news/detail/579/)
 - 2019年度 山形大学大学院理工学研究科地球科学分野 修士論文最優秀発表賞

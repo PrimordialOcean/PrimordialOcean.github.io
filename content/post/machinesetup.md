@@ -59,24 +59,13 @@ $ ${env_name}/Scripts/Activate.ps1
 (${env_name})$ pip install numpy scipy pandas matplotlib jupyterlab numba
 ```
 
-## rclone
-Ubuntuはクラウドストレージの公式クライアントが提供されていない場合が多々あることが問題だが，その代替となるソフトウェア．
-言うなればクラウドストレージ版rsync．
+## Rclone
+[Rclone](https://rclone.org/)はGo言語で記述されたオープンソースのクラウドストレージの管理用プログラムである．RcloneはDropboxやGoogle Drive，OneDriveといった主要なクラウドストレージサービスのほとんどを網羅し，Unixで用いられるrsyncやcp，mv等のコマンド群と同等の機能を有している．WindowsやmacOS，linux，FreeBSDなどのローカルまたは仮想ファイルシステムをサポートしている．
+
+`-n`または`--dry-run`で転送されるファイルを確認できる．
 ```ps1
 # クラウドストレージ全体をコピーする際は特にアスタリスク等は不要
 $ rclone copy dropbox: ${path}
-```
-
-## エディタ（NeoVim）の設定
-init.vimの設定
-```vim
-set number "行番号を表示
-set tabstop=4 "タブでスペース4つ
-set shiftwidth=4 "自動インデント時にスペース4つ挿入
-set clipboard=unnamed "yankした文字列をクリップボードにコピー
-set hls "検索した文字をハイライト
-set mouse=a "マウス操作に対応
-set list "空白文字を可視化
 ```
 
 ## Officeのインストール
